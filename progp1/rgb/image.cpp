@@ -16,7 +16,8 @@ namespace rgb {
     }
 
     image::~image() {
-
+        delete [] pixels[0];
+        delete [] pixels;
     }
 
     int image::width() const {

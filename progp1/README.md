@@ -22,6 +22,8 @@ Indique aqui as tarefas que conseguiu realizar e quais não.
 1.5. Mix
 2. Image\
 2.1 Constructor\
+2.2 Width and Height methods\
+2.3 Destructor
 
 
 
