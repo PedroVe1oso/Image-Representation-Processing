@@ -44,15 +44,18 @@ namespace rgb {
     }
 
     color& color::operator=(const color& c) {
+        this->r = c.r;
+        this->g = c.g;
+        this->b = c.b;
         return *this;
     }
 
     bool color::operator==(const color &c) const {
-        return false;
+        return (this->r == c.r && this->g == c.g && this->g == c.g) ? true : false;
     }
 
     bool color::operator!=(const color &c) const {
-        return false;
+        return (this->r != c.r || this->g != c.g || this->g != c.g) ? true : false;
     }
 
     void color::invert() {
