@@ -14,7 +14,9 @@ NºMecanográfico -> 201906293
 
 Indique aqui as tarefas que conseguiu realizar e quais não. 
 
-1. Color Constructures
-2. Color Operator overloading
+1. Color constructors
+2. Color operator overloading
+3. Invert
+4. To gray scale
 
 

@@ -69,6 +69,7 @@ namespace rgb {
     }
 
     void color::to_gray_scale() {
-
+        int gray = (this->r + this->g + this->b)/3;
+        this->r = this->g = this->b = gray;
     }
 }
