@@ -44,32 +44,34 @@ namespace rgb {
     }
 
     color& color::operator=(const color& c) {
-        this->r = c.r;
-        this->g = c.g;
-        this->b = c.b;
+        r = c.r;
+        g = c.g;
+        b = c.b;
         return *this;
     }
 
     bool color::operator==(const color &c) const {
-        return (this->r == c.r && this->g == c.g && this->b == c.b) ? true : false;
+        return (r == c.r && g == c.g && b == c.b) ? true : false;
     }
 
     bool color::operator!=(const color &c) const {
-        return (this->r != c.r || this->g != c.g || this->b != c.b) ? true : false;
+        return (r != c.r || g != c.g || b != c.b) ? true : false;
     }
 
     void color::invert() {
-        this->r = 255 - this->r;
-        this->g = 255 - this->g;
-        this->b = 255 - this->b;
+        r = 255 - r;
+        g = 255 - g;
+        b = 255 - b;
     }
 
     void color::mix(const color& c, int f) {
-
+        r = ((100 - f) * r + f * c.r) / 100;
+        g = ((100 - f) * g + f * c.g) / 100;
+        b = ((100 - f) * b + f * c.b) / 100;
     }
 
     void color::to_gray_scale() {
-        int gray = (this->r + this->g + this->b)/3;
-        this->r = this->g = this->b = gray;
+        int gray = (r + g + b)/3;
+        r = g = b = gray;
     }
 }
