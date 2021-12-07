@@ -51,11 +51,11 @@ namespace rgb {
     }
 
     bool color::operator==(const color &c) const {
-        return (this->r == c.r && this->g == c.g && this->g == c.g) ? true : false;
+        return (this->r == c.r && this->g == c.g && this->b == c.b) ? true : false;
     }
 
     bool color::operator!=(const color &c) const {
-        return (this->r != c.r || this->g != c.g || this->g != c.g) ? true : false;
+        return (this->r != c.r || this->g != c.g || this->b != c.b) ? true : false;
     }
 
     void color::invert() {
