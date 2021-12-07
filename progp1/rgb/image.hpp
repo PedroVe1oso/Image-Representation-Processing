@@ -9,9 +9,9 @@ namespace rgb {
     private:
         int iwidth;
         int iheight;
-        color **pixels;
+        color** pixels;
     public:
-        image(int w, int h, const color& fill = color::WHITE);
+        image(int w, int h, const color &fill = color::WHITE);
         ~image();
         int width() const;
         int height() const;

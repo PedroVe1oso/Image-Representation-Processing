@@ -20,6 +20,8 @@ Indique aqui as tarefas que conseguiu realizar e quais não.
 1.3. Invert\
 1.4. To gray scale\
 1.5. Mix
+2. Image\
+2.1 Constructor\
 
 
 
