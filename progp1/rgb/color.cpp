@@ -59,7 +59,9 @@ namespace rgb {
     }
 
     void color::invert() {
-
+        this->r = 255 - this->r;
+        this->g = 255 - this->g;
+        this->b = 255 - this->b;
     }
 
     void color::mix(const color& c, int f) {
