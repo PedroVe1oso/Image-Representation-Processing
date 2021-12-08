@@ -13,6 +13,10 @@ namespace rgb {
         void open();
         void blank();
         void save();
+        void replace();
+        void crop();
+        void add();
+        void mix();
     public:
         script(const std::string& filename);
         ~script();

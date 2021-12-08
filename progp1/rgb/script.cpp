@@ -50,8 +50,25 @@ namespace rgb {
                 save();
             } else if (command == "fill") {
                 fill();
+            } else if (command  == "invert"){
+                img->invert();
+            } else if (command  == "to_gray_scale"){
+                img->to_gray_scale();
+            } else if (command == "rotate_left"){
+                img->rotate_left();
+            } else if (command == "rotate_right"){
+                img->rotate_right();
+            } else if (command  == "replace") {
+                replace();
+            } else if (command  == "add") {
+                add();
+            } else if (command == "crop") {
+                crop();
+            } else if (command == "mix") {
+                mix();
             }
-            // TODO ...
+
+
 
         }
     }
@@ -84,5 +101,30 @@ namespace rgb {
         color c;
         input >> x >> y >> w >> h >> c;
         img -> fill(x, y, w, h, c);
+    }
+    void script::replace() {
+        color a, b;
+        input >> a >> b;
+        img -> replace(a , b);
+    }
+    void script::crop() {
+        int x, y, w, h;
+        input >> x >> y >> w >> h;
+        img -> crop(x, y, w, h);
+    }
+    void script::add() {
+        int x, y;
+        color neutral;
+        std::string filename;
+        input >> filename >> neutral >> x >> y;
+        image* other = png::load(root_path + "/" + filename);
+        img -> add(*other, neutral, x, y);
+    }
+    void script::mix() {
+        int f;
+        std::string filename;
+        input >> filename >> f;
+        image* other = png::load(root_path + "/" + filename);
+        img -> mix(*other, f);
     }
 }
