@@ -119,6 +119,7 @@ namespace rgb {
         input >> filename >> neutral >> x >> y;
         image* other = png::load(root_path + "/" + filename);
         img -> add(*other, neutral, x, y);
+        delete other;
     }
     void script::mix() {
         int f;
@@ -126,5 +127,6 @@ namespace rgb {
         input >> filename >> f;
         image* other = png::load(root_path + "/" + filename);
         img -> mix(*other, f);
+        delete other;
     }
 }

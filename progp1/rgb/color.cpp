@@ -16,7 +16,7 @@ namespace rgb {
         b = blue;
     }
 
-    color::color(const color& other) : color(other.r, other.g, other.b){
+    color::color(const color& other) : color(other.red(), other.green(), other.blue()){
     }
 
     rgb_value color::red() const {
@@ -44,18 +44,18 @@ namespace rgb {
     }
 
     color& color::operator=(const color& c) {
-        r = c.r;
-        g = c.g;
-        b = c.b;
+        r = c.red();
+        g = c.green();
+        b = c.blue();
         return *this;
     }
 
     bool color::operator==(const color &c) const {
-        return (r == c.r && g == c.g && b == c.b) ? true : false;
+        return (r == c.red() && g == c.green() && b == c.blue());
     }
 
     bool color::operator!=(const color &c) const {
-        return (r != c.r || g != c.g || b != c.b) ? true : false;
+        return (r != c.red() || g != c.green() || b != c.blue());
     }
 
     void color::invert() {
@@ -65,9 +65,9 @@ namespace rgb {
     }
 
     void color::mix(const color& c, int f) {
-        r = ((100 - f) * r + f * c.r) / 100;
-        g = ((100 - f) * g + f * c.g) / 100;
-        b = ((100 - f) * b + f * c.b) / 100;
+        r = ((100 - f) * r + f * c.red()) / 100;
+        g = ((100 - f) * g + f * c.green()) / 100;
+        b = ((100 - f) * b + f * c.blue()) / 100;
     }
 
     void color::to_gray_scale() {

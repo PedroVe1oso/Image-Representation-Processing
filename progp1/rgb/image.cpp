@@ -72,15 +72,12 @@ namespace rgb {
                     const color& neutral,
                     int x,
                     int y) {
-        for (int i = 0; i < img.iwidth; i++) {
-            for(int j = 0; j < img.iheight; j++){
-                if (img.pixels[i][j] != neutral)
-                    pixels[i + x][j + y] = img.pixels[i][j];
+        for (int i = 0; i < img.width(); i++) {
+            for(int j = 0; j < img.height(); j++){
+                if (img.at(i, j) != neutral)
+                    pixels[i + x][j + y] = img.at(i, j);
             }
         }
-
-        delete [] img.pixels[0];
-        delete [] img.pixels;
     }
 
     void image::crop(int x, int y, int w, int h) {
@@ -155,11 +152,8 @@ namespace rgb {
     void image::mix(const image& img, int factor) {
         for (int i = 0; i < iwidth; i++) {
             for(int j = 0; j < iheight; j++){
-                pixels[i][j].mix(img.pixels[i][j], factor);
+                pixels[i][j].mix(img.at(i, j), factor);
             }
         }
-
-        delete [] img.pixels[0];
-        delete [] img.pixels;
     }
 }
