@@ -1,7 +1,6 @@
+progp1/build/
 progp1/cmake-build-debug/
 progp1/data/
 progp1/external/gtest/
 progp1/.cpack_ignore
 .idea/
-progp1/build/*
-
