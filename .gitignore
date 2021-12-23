@@ -3,3 +3,5 @@ progp1/data/
 progp1/external/gtest/
 progp1/.cpack_ignore
 .idea/
+progp1/build/
+

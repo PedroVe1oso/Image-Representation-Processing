@@ -1,4 +1,4 @@
 <map id="rgb::image" name="rgb::image">
-<area shape="rect" id="node1" title=" " alt="" coords="5,141,97,168"/>
-<area shape="rect" id="node2" href="$classrgb_1_1color.html" title=" " alt="" coords="10,29,93,55"/>
+<area shape="rect" id="node1" title="An rgb::image object is defined by a width (width()), a height (height()), and a RGB color matrix wit..." alt="" coords="5,141,97,168"/>
+<area shape="rect" id="node2" href="$classrgb_1_1color.html" title="A rgb::color object has three integer values associated with it (r,g,b) between 0 and 255 for the red..." alt="" coords="10,29,93,55"/>
 </map>

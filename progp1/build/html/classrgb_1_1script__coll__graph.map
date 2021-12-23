@@ -1,5 +1,5 @@
 <map id="rgb::script" name="rgb::script">
-<area shape="rect" id="node1" title=" " alt="" coords="8,231,95,257"/>
-<area shape="rect" id="node2" href="$classrgb_1_1image.html" title=" " alt="" coords="5,141,97,168"/>
-<area shape="rect" id="node3" href="$classrgb_1_1color.html" title=" " alt="" coords="10,29,93,55"/>
+<area shape="rect" id="node1" title="The rgb::script class is used to process text scripts with image manipulation commands." alt="" coords="8,231,95,257"/>
+<area shape="rect" id="node2" href="$classrgb_1_1image.html" title="An rgb::image object is defined by a width (width()), a height (height()), and a RGB color matrix wit..." alt="" coords="5,141,97,168"/>
+<area shape="rect" id="node3" href="$classrgb_1_1color.html" title="A rgb::color object has three integer values associated with it (r,g,b) between 0 and 255 for the red..." alt="" coords="10,29,93,55"/>
 </map>
