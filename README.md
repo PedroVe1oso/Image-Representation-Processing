@@ -1,4 +1,4 @@
-# Progamação Project 1 -> Image-Representation-Processing
+# Progamação Project 1 -> Image Representation Processing
 Representação e manipulação de images png
 
 
